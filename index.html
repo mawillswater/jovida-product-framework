@@ -2596,8 +2596,8 @@
       <div class="unit-section-head">
         <div class="unit-num purple">2</div>
         <div class="unit-text">
-          <h2>Action <span style="font-size: 16px; color: var(--muted); font-weight: 700; margin-left: 8px;">· 5 类</span></h2>
-          <p style="margin-top: 6px;">Agent 和用户约定的、要完成的动作。完成 action 是用户每天获得 streak 的核心方式。共 5 种类型，每种有不同的完成判定：read（读完）、todo（勾选完）、quiz（答完）、tell（上传完）、do（一键完成）。</p>
+          <h2>Action <span style="font-size: 16px; color: var(--muted); font-weight: 700; margin-left: 8px;">· 6 类</span></h2>
+          <p style="margin-top: 6px;">Agent 和用户约定的、要完成的动作。完成 action 是用户每天获得 streak 的核心方式。共 6 种类型，每种有不同的完成判定：read（读完）、todo（勾选完）、vibe coding（完成交互 / 答题）、tell（上传完）、do（一键完成）、recap（看完复盘 + 调方向）。</p>
         </div>
       </div>
 
@@ -2682,12 +2682,12 @@
           <div class="ua-completion">勾选完任意 1 项 = 完成</div>
         </div>
 
-        <!-- 3. Quiz -->
+        <!-- 3. Vibe Coding (常用于答题 quiz) -->
         <div class="unit-action-card quiz">
           <div class="ua-icon">✦</div>
-          <div class="ua-en">QUIZ</div>
-          <div class="ua-name">答题类</div>
-          <div class="ua-desc">答完一组题（对错都算）</div>
+          <div class="ua-en">VIBE CODING</div>
+          <div class="ua-name">vibe Coding 类</div>
+          <div class="ua-desc">与后端数据打通的 AI 生成网页 · 常用于答题 quiz</div>
           <div class="ua-phone-wrap">
             <div class="phone"><div class="phone-screen">
               <div class="dynamic-island"></div>
@@ -2714,7 +2714,7 @@
               </div>
             </div></div>
           </div>
-          <div class="ua-completion">答完所有题 = 完成</div>
+          <div class="ua-completion">完成网页交互 = 完成</div>
         </div>
 
         <!-- 4. Tell -->
@@ -2797,6 +2797,87 @@
             </div></div>
           </div>
           <div class="ua-completion">点 "做完了" = 完成</div>
+        </div>
+
+        <!-- 6. Recap -->
+        <div class="unit-action-card recap">
+          <div class="ua-icon">📊</div>
+          <div class="ua-en">RECAP</div>
+          <div class="ua-name">复盘类</div>
+          <div class="ua-desc">vibe Coding 历史数据网页 + Agent 调方向入口</div>
+          <div class="ua-phone-wrap">
+            <div class="phone"><div class="phone-screen">
+              <div class="dynamic-island"></div>
+              <div class="status-bar"><span>21:00</span><span>●●●●</span></div>
+
+              <div style="display: flex; align-items: center; gap: 10px; padding: 50px 14px 12px;">
+                <div style="width: 28px; height: 28px; border-radius: 50%; background: #fff; border: 1px solid var(--phone-line); display: grid; place-items: center; font-size: 15px;">‹</div>
+                <h3 style="margin: 0; font-size: 13px; font-weight: 900; flex: 1;">本周复盘</h3>
+                <span style="font-size: 11px; color: #c26b12; font-weight: 900;">☀☀</span>
+              </div>
+
+              <!-- vibe coded dashboard -->
+              <div style="margin: 0 14px 10px; background: linear-gradient(135deg, #221f1c, #3a2c1f); border-radius: 14px; padding: 12px 14px; color: #fff; position: relative; overflow: hidden;">
+                <div style="font-size: 8.5px; color: #b9aef0; font-weight: 900; letter-spacing: 1.5px; text-transform: uppercase;">VIBE CODED · 历史数据</div>
+                <div style="display: flex; align-items: baseline; gap: 4px; margin-top: 4px;">
+                  <div style="font-size: 28px; font-weight: 900; color: #fff;">78%</div>
+                  <div style="font-size: 11px; color: rgba(255,255,255,0.55); font-weight: 700;">完成率</div>
+                </div>
+                <!-- 7-day bar chart -->
+                <div style="display: flex; align-items: flex-end; gap: 4px; margin-top: 10px; height: 36px;">
+                  <div style="flex: 1; background: linear-gradient(180deg, #ff7a45, #c55215); border-radius: 3px 3px 0 0; height: 75%;"></div>
+                  <div style="flex: 1; background: linear-gradient(180deg, #ff7a45, #c55215); border-radius: 3px 3px 0 0; height: 90%;"></div>
+                  <div style="flex: 1; background: linear-gradient(180deg, #ff7a45, #c55215); border-radius: 3px 3px 0 0; height: 60%;"></div>
+                  <div style="flex: 1; background: linear-gradient(180deg, #c55215, #aa3838); border-radius: 3px 3px 0 0; height: 25%;"></div>
+                  <div style="flex: 1; background: linear-gradient(180deg, #ff7a45, #c55215); border-radius: 3px 3px 0 0; height: 85%;"></div>
+                  <div style="flex: 1; background: linear-gradient(180deg, #ff7a45, #c55215); border-radius: 3px 3px 0 0; height: 95%;"></div>
+                  <div style="flex: 1; background: linear-gradient(180deg, #ff7a45, #c55215); border-radius: 3px 3px 0 0; height: 80%;"></div>
+                </div>
+                <div style="display: flex; gap: 4px; margin-top: 4px; font-size: 8px; color: rgba(255,255,255,0.5);">
+                  <span style="flex: 1; text-align: center;">M</span>
+                  <span style="flex: 1; text-align: center;">T</span>
+                  <span style="flex: 1; text-align: center;">W</span>
+                  <span style="flex: 1; text-align: center;">T</span>
+                  <span style="flex: 1; text-align: center;">F</span>
+                  <span style="flex: 1; text-align: center;">S</span>
+                  <span style="flex: 1; text-align: center;">S</span>
+                </div>
+              </div>
+
+              <!-- per goal breakdown -->
+              <div style="margin: 0 14px;">
+                <div style="font-size: 10px; color: var(--brand-deep); font-weight: 900; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 6px;">各 Goal 完成率</div>
+                <div style="display: flex; flex-direction: column; gap: 5px;">
+                  <div style="display: flex; align-items: center; gap: 6px;">
+                    <span style="width: 14px; height: 14px; border-radius: 50%; background: linear-gradient(135deg, #c8e6bd, #45a312); flex: 0 0 auto;"></span>
+                    <span style="font-size: 10.5px; flex: 1; color: #221f1c; font-weight: 700;">减脂</span>
+                    <span style="font-size: 10px; color: #357d10; font-weight: 900;">92%</span>
+                  </div>
+                  <div style="display: flex; align-items: center; gap: 6px;">
+                    <span style="width: 14px; height: 14px; border-radius: 50%; background: linear-gradient(135deg, #e3d9ff, #7866d8); flex: 0 0 auto;"></span>
+                    <span style="font-size: 10.5px; flex: 1; color: #221f1c; font-weight: 700;">睡好觉</span>
+                    <span style="font-size: 10px; color: #357d10; font-weight: 900;">85%</span>
+                  </div>
+                  <div style="display: flex; align-items: center; gap: 6px;">
+                    <span style="width: 14px; height: 14px; border-radius: 50%; background: linear-gradient(135deg, #b6deff, #4f8fc8); flex: 0 0 auto;"></span>
+                    <span style="font-size: 10.5px; flex: 1; color: #221f1c; font-weight: 700;">每日英语</span>
+                    <span style="font-size: 10px; color: #aa3838; font-weight: 900;">42%</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- chat with Agent entry -->
+              <div style="margin: 14px 14px 0; background: linear-gradient(135deg, #7866d8, #5b4eab); color: #fff; border-radius: 14px; padding: 11px 14px; box-shadow: 0 8px 18px rgba(120,102,216,0.30); display: flex; align-items: center; gap: 10px;">
+                <div style="width: 30px; height: 30px; border-radius: 9px; background: rgba(255,255,255,0.18); display: grid; place-items: center; font-size: 16px;">💬</div>
+                <div style="flex: 1; min-width: 0;">
+                  <div style="font-size: 11.5px; font-weight: 900;">和 Jovida 聊下周方向</div>
+                  <div style="font-size: 9.5px; opacity: 0.85; margin-top: 2px;">看完数据，一起调下一段</div>
+                </div>
+                <span style="font-size: 14px;">›</span>
+              </div>
+            </div></div>
+          </div>
+          <div class="ua-completion">看完 + 聊完方向 = 完成</div>
         </div>
 
       </div>
@@ -5006,11 +5087,11 @@
 }
 .unit-phone-frame:hover .phone { transform: scale(0.62); }
 
-/* Actions 5-types row */
+/* Actions 6-types row */
 .unit-actions-row {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 14px;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 12px;
 }
 .unit-action-card {
   background: var(--canvas-2);
@@ -5032,6 +5113,7 @@
 .unit-action-card.quiz .ua-icon  { background: #fff4db; color: #c78012; }
 .unit-action-card.tell .ua-icon  { background: #f4ecff; color: #7962d6; }
 .unit-action-card.do   .ua-icon  { background: #ffe8d6; color: #c55215; }
+.unit-action-card.recap .ua-icon { background: #e3d9ff; color: #5b4eab; }
 .unit-action-card .ua-name {
   margin: 4px 0 4px;
   font-size: 16px; font-weight: 900; color: #221f1c;
@@ -5046,6 +5128,7 @@
 .unit-action-card.quiz .ua-en { color: #c78012; }
 .unit-action-card.tell .ua-en { color: #4d3ea0; }
 .unit-action-card.do   .ua-en { color: #c55215; }
+.unit-action-card.recap .ua-en { color: #5b4eab; }
 .unit-action-card .ua-desc {
   font-size: 11.5px; color: var(--muted); line-height: 1.5;
   margin: 8px 0 12px;
@@ -5074,6 +5157,7 @@
 .unit-action-card.quiz .ua-completion { color: #c78012; background: rgba(199,128,18,0.14); }
 .unit-action-card.tell .ua-completion { color: #4d3ea0; background: rgba(120,102,216,0.14); }
 .unit-action-card.do   .ua-completion { color: #c55215; background: rgba(197,82,21,0.14); }
+.unit-action-card.recap .ua-completion { color: #5b4eab; background: rgba(120,102,216,0.16); }
 
 /* ============== JOURNEY MAP (integrated flowchart) ============== */
 .journey-map {
