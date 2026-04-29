@@ -1481,7 +1481,7 @@
     <div class="ov-compose-card" style="grid-column: auto;">
       <div class="label">两层闭环 · 互相嵌套</div>
       <h2>Jovida 的宏观与微观教练闭环</h2>
-      <p class="desc">宏观闭环决定"现在该练什么"——用户的目标、现状、问题诊断、本阶段的 Action 编排和资源池。这套策略被注入"持续陪练"节点，成为微观闭环每天迭代的素材库。一次微观循环约几分钟，宏观循环约一段时间。<b>日常 99% 的产品体验在微观闭环里发生，但一旦微观跑偏了，宏观闭环会通过复盘把它拉回来</b>。</p>
+      <p class="desc">宏观闭环决定"现在该练什么"——用户的 Desire、现状、问题诊断、本阶段的 Action Card 编排和 Tips 池。这套策略被注入"持续陪练"节点，成为微观闭环每天迭代的素材库。一次微观循环约几分钟，宏观循环约一段时间。<b>日常 99% 的产品体验在微观闭环里发生，但一旦微观跑偏了，宏观闭环会通过复盘把它拉回来</b>。</p>
 
       <!-- ===== Macro section ===== -->
       <div class="ul-section macro">
@@ -1768,7 +1768,7 @@
               <h3>连胜 12 / 7</h3>
               <p>减脂 + 睡眠在轨；英语单词第 3 天起开始拖延。</p>
               <div class="p-stat-row">
-                <div class="p-stat"><b>78%</b><span>action 完成率</span></div>
+                <div class="p-stat"><b>78%</b><span>Action Card 完成率</span></div>
                 <div class="p-stat"><b>+5</b><span>新解锁资源</span></div>
               </div>
             </div>
@@ -2049,7 +2049,7 @@
     </div>
 
     <div class="phase-phones">
-      <!-- A · Action 干预 -->
+      <!-- A · Action Card 干预 -->
       <div class="phase-phone" data-node="mi3">
         <div class="phase-phone-wrap">
           <div class="phone"><div class="phone-screen">
@@ -2080,13 +2080,13 @@
           </div></div>
         </div>
         <div class="phase-sublabel">
-          <span class="sl-tag">A · 通过 Action</span><br>
+          <span class="sl-tag">A · 通过 Action Card</span><br>
           推一步动作让用户做
           <span class="sub">read · todo · quiz · tell</span>
         </div>
       </div>
 
-      <!-- B · Resources / Nudges -->
+      <!-- B · Tips -->
       <div class="phase-phone" data-node="mi3b">
         <div class="phase-phone-wrap">
           <div class="phone"><div class="phone-screen">
@@ -2135,7 +2135,7 @@
           </div></div>
         </div>
         <div class="phase-sublabel">
-          <span class="sl-tag">B · 通过 Resources / Nudges</span><br>
+          <span class="sl-tag">B · 通过 Tips</span><br>
           把现成支持摆到面前
           <span class="sub">附近餐厅 · 教程 · 商品 · 轻提醒</span>
         </div>
@@ -2149,7 +2149,7 @@
       <div class="phase-num">4</div>
       <div class="phase-text">
         <h2 class="phase-title">用户执行行为 <em>· 完成 · 反馈 · 回流</em></h2>
-        <p class="phase-desc">用户实际做了 action，得到一个具体结果（quiz 70 分、todo 勾掉、读完一篇）。Agent 立即给出关联反馈（不是泛泛"恭喜"，而是"retain 还没记住，明天单独练一次"），同时这次结果回流成下一轮观察的素材——闭环不是终点，是新一轮的起点。</p>
+        <p class="phase-desc">用户实际完成了 Action Card，得到一个具体结果（quiz 70 分、todo 勾掉、读完一篇）。Agent 立即给出关联反馈（不是泛泛"恭喜"，而是"retain 还没记住，明天单独练一次"），同时这次结果回流成下一轮观察的素材——闭环不是终点，是新一轮的起点。</p>
       </div>
     </div>
 
@@ -2199,7 +2199,7 @@
           </div></div>
         </div>
         <div class="phase-sublabel">
-          完成 action · 获得具体结果
+          完成 Action Card · 获得具体结果
           <span class="sub">分数 · 反馈 · 奖励 · 数据回流到观察</span>
         </div>
       </div>
@@ -2265,7 +2265,7 @@
       </div>
       <div class="wr-cell">
         <b>③ 干预成本</b>
-        <span>Action 一步可完成，资源全部预挂，不让用户跳出去找。Nudges 不强求完成。</span>
+        <span>Action Card 一步可完成，Tips 全部预挂，不让用户跳出去找。Tips 不强求消费。</span>
       </div>
       <div class="wr-cell">
         <b>④ 反馈关联</b>
@@ -2418,7 +2418,7 @@
         </div></div>
         <div class="node-tag">
           ③ 干预 + 辅助
-          <span class="sub">Action 详情页 · 资源 + 一步动作</span>
+          <span class="sub">Action Card 详情页 · Tips + 一步动作</span>
         </div>
       </div>
 
@@ -2470,24 +2470,29 @@
 
   <div class="section-head">
     <span class="pill-tag">📦 产品的基本单元</span>
-    <h1>4 个基本概念，撑起整个产品</h1>
-    <p>Jovida 里所有功能都建立在 4 个基本概念之上：<b>Goals</b>（用户的目标）→ <b>Actions</b>（要完成的动作，5 类）→ <b>Resources</b>（Agent 给的辅助支持）→ <b>Streak</b>（奖励落地）。理解这 4 个概念就能把产品里任何一个屏幕归位。</p>
+    <h1>5 个基本单元，撑起整个产品</h1>
+    <p>Jovida 里所有功能都建立在 5 个基本单元之上：<b>Desire</b>（用户的愿望 / 渴求 / 心愿）→ <b>Plan</b>（Desire Plan + Daily Plan）→ <b>Action Card</b>（Agent 和用户约定好的、用户要做的事情）→ <b>Tips</b>（帮助用户完成 Action Card 的资源）→ <b>Progress</b>（用户的进展，包含 dashboard、复盘和奖励）。理解这 5 个单元就能把产品里任何一个屏幕归位。</p>
   </div>
 
   <div class="units-grid">
 
-    <!-- ===== Goals ===== -->
+    <!-- ===== Desire ===== -->
     <div class="unit-section">
       <div class="unit-section-head">
         <div class="unit-num">1</div>
         <div class="unit-text">
-          <h2>Goal</h2>
+          <h2>Desire</h2>
         </div>
       </div>
 
       <div class="unit-body">
         <div class="unit-info">
-          <p>Goal 是用户的<b>目标 / 心愿</b>。每个用户可以同时拥有多个 goals——通过 Onboarding 创建第一批，之后随时可以增减。每个 goal 都关联一组 actions 和 resources。</p>
+          <p>Desire 是用户的<b>愿望 / 渴求 / 心愿</b>，不是单纯的 KPI。它保留用户想靠近的生活状态、为什么现在想要、愿意付出的代价，以及不想牺牲的边界。每个用户可以同时拥有多个 Desires——通过 Onboarding 创建第一批，之后随时增减。</p>
+          <ul>
+            <li><span class="li-icon">①</span><span><b>不是 Goal：</b>Goal 更像结果，Desire 要保留情绪动机和生活状态。</span></li>
+            <li><span class="li-icon">②</span><span><b>不是任务：</b>Desire 本身不要求用户每天完成，它需要先被翻译成 Plan。</span></li>
+            <li><span class="li-icon">③</span><span><b>可以并行：</b>减肥、睡眠、英语、旅游、追 crush 都能同时存在，由 Daily Plan 统一排到每天。</span></li>
+          </ul>
         </div>
 
         <div class="unit-phone-frame">
@@ -2533,9 +2538,9 @@
               <div style="position: absolute; top: 8px; right: 12px; font-size: 32px;">🥕</div>
             </div>
 
-            <!-- My Goal -->
+            <!-- My Desire -->
             <div style="padding: 20px 18px 6px;">
-              <div style="font-size: 11px; color: var(--phone-soft); font-weight: 700;">My Goal</div>
+              <div style="font-size: 11px; color: var(--phone-soft); font-weight: 700;">My Desire</div>
             </div>
 
             <div style="padding: 0 18px; display: flex; gap: 8px;">
@@ -2545,7 +2550,7 @@
               </button>
               <button style="flex: 1; height: 38px; border-radius: 999px; background: #fff; border: 1px solid var(--phone-line); display: flex; align-items: center; justify-content: center; gap: 6px; font-size: 12.5px; font-weight: 800; color: #221f1c;">
                 <span style="width: 18px; height: 18px; border-radius: 50%; background: #45a312; color: #fff; display: grid; place-items: center; font-size: 11px; font-weight: 900;">+</span>
-                Add a goal
+                Add a desire
               </button>
             </div>
 
@@ -2555,34 +2560,34 @@
               <span style="font-size: 12px; color: #888; font-weight: 700;">3 ›</span>
             </div>
 
-            <!-- Goal cards -->
+            <!-- Desire cards -->
             <div style="margin: 10px 18px 0; display: flex; flex-direction: column; gap: 8px;">
               <div style="background: #fff; border-radius: 14px; padding: 10px 12px; display: flex; align-items: center; gap: 10px;">
                 <div style="width: 42px; height: 42px; border-radius: 10px; background: linear-gradient(135deg, #c8e6bd, #45a312); display: grid; place-items: center; font-size: 22px;">🍏</div>
                 <div style="flex: 1; min-width: 0;">
                   <div style="font-size: 13px; font-weight: 900; color: #221f1c;">减脂</div>
-                  <div style="font-size: 10.5px; color: var(--phone-soft); margin-top: 2px;">通过 Apple Health 检测体重变化…</div>
+                  <div style="font-size: 10.5px; color: var(--phone-soft); margin-top: 2px;">更轻盈、有掌控感…</div>
                 </div>
               </div>
               <div style="background: #fff; border-radius: 14px; padding: 10px 12px; display: flex; align-items: center; gap: 10px;">
                 <div style="width: 42px; height: 42px; border-radius: 10px; background: linear-gradient(135deg, #ffd996, #c78012); display: grid; place-items: center; font-size: 22px;">☕</div>
                 <div style="flex: 1; min-width: 0;">
-                  <div style="font-size: 13px; font-weight: 900; color: #221f1c;">晨跑习惯</div>
-                  <div style="font-size: 10.5px; color: var(--phone-soft); margin-top: 2px;">通过 Apple Health 检测起床时间…</div>
+                  <div style="font-size: 13px; font-weight: 900; color: #221f1c;">显化</div>
+                  <div style="font-size: 10.5px; color: var(--phone-soft); margin-top: 2px;">把注意力放回想要的生活…</div>
                 </div>
               </div>
               <div style="background: #fff; border-radius: 14px; padding: 10px 12px; display: flex; align-items: center; gap: 10px;">
                 <div style="width: 42px; height: 42px; border-radius: 10px; background: linear-gradient(135deg, #b6deff, #4f8fc8); display: grid; place-items: center; font-size: 22px;">📚</div>
                 <div style="flex: 1; min-width: 0;">
                   <div style="font-size: 13px; font-weight: 900; color: #221f1c;">每日英语</div>
-                  <div style="font-size: 10.5px; color: var(--phone-soft); margin-top: 2px;">每天学 3 个新词 + 1 个 quiz…</div>
+                  <div style="font-size: 10.5px; color: var(--phone-soft); margin-top: 2px;">每天轻量积累并记住…</div>
                 </div>
               </div>
               <div style="background: #fff; border-radius: 14px; padding: 10px 12px; display: flex; align-items: center; gap: 10px;">
                 <div style="width: 42px; height: 42px; border-radius: 10px; background: linear-gradient(135deg, #e3d9ff, #7866d8); display: grid; place-items: center; font-size: 22px;">😴</div>
                 <div style="flex: 1; min-width: 0;">
                   <div style="font-size: 13px; font-weight: 900; color: #221f1c;">睡好觉</div>
-                  <div style="font-size: 10.5px; color: var(--phone-soft); margin-top: 2px;">通过 Apple Health 监测睡眠时长…</div>
+                  <div style="font-size: 10.5px; color: var(--phone-soft); margin-top: 2px;">晚上能收下来，睡得更稳…</div>
                 </div>
               </div>
             </div>
@@ -2591,13 +2596,153 @@
       </div>
     </div>
 
-    <!-- ===== Actions (5 types) ===== -->
+    <!-- ===== Plan ===== -->
     <div class="unit-section">
       <div class="unit-section-head">
         <div class="unit-num purple">2</div>
         <div class="unit-text">
-          <h2>Action <span style="font-size: 16px; color: var(--muted); font-weight: 700; margin-left: 8px;">· 6 类</span></h2>
-          <p style="margin-top: 6px;">Agent 和用户约定的、要完成的动作。完成 action 是用户每天获得 streak 的核心方式。共 6 种类型，每种有不同的完成判定：read（读完）、todo（勾选完）、vibe coding（完成交互 / 答题）、tell（上传完）、do（一键完成）、recap（看完复盘 + 调方向）。</p>
+          <h2>Plan</h2>
+          <p style="margin-top: 6px;">Plan 把一个 Desire 翻译成可执行、可观察、可调整的策略协议。它分成两层：<b>Desire Plan</b> 是每个 Desire 自己的长期计划；<b>Daily Plan</b> 是 Agent 和用户约定好的、按天要完成的 Action Card 列表。</p>
+        </div>
+      </div>
+
+      <div class="unit-body full">
+        <div class="plan-split">
+          <div class="plan-principle primary">
+            <div class="plan-kicker">Desire Plan</div>
+            <h3>每个 Desire 自己的长期策略协议</h3>
+            <p>Desire Plan 不是一篇计划书，而是 Agent 用来生成 Action Card、Tips、Progress 和 Review 的上游协议。它要说明为什么是这套计划、用户今天怎么落地、做偏了怎么调，以及用户怎么保持愿望感而不是被任务压住。</p>
+            <div class="plan-flow">
+              <span>Desire</span><i>→</i><span>Diagnosis</span><i>→</i><span>Strategy</span><i>→</i><span>Action</span><i>→</i><span>Progress</span><i>→</i><span>Review</span>
+            </div>
+          </div>
+
+          <div class="plan-principle">
+            <div class="plan-kicker">Daily Plan</div>
+            <h3>今天要做什么</h3>
+            <p>Daily Plan 不替代 Desire Plan。它每天读取多个 Desire Plan 的当前阶段、Action Protocol 和 Review 结果，和用户约定当天要完成的 4-6 张 Action Card。用户看到的是今天，Agent 背后使用的是每个 Desire 的长期协议。</p>
+            <div class="unit-phone-frame" style="height: 350px; margin-top: 14px;">
+              <div class="phone" style="transform: scale(0.43); transform-origin: top center;"><div class="phone-screen">
+                <div class="dynamic-island"></div>
+                <div class="status-bar"><span>7:35</span><span>●●●●</span></div>
+                <div class="p-topbar" style="padding-top: 36px;">
+                  <div class="p-row">
+                    <div class="p-profile">
+                      <img src="ip.png" alt="">
+                      <div><div class="p-hello">早安，希希</div><div class="p-date">今日 Daily Plan</div></div>
+                    </div>
+                    <span class="p-pill fire">🔥 14</span>
+                  </div>
+                  <div class="p-coach" style="margin-top: 10px;">
+                    <div class="speech"><p><b>Jovida</b>：今天从 4 个 Desire 里排了 5 张 Action Card，先做最容易完成的。</p></div>
+                    <img src="ip.png" alt="">
+                  </div>
+                </div>
+                <div class="p-section-head"><h3>今日 Action Cards</h3><span class="side">0/5 完成</span></div>
+                <div class="p-action-list">
+                  <div class="p-action-cell"><div class="p-type-icon todo">✓</div><div class="p-action-copy"><b>晒太阳 10 分钟</b><span><i class="p-mini-goal sleep">睡好觉</i>todo · NOW</span></div><div class="p-reward">☀</div></div>
+                  <div class="p-action-cell"><div class="p-type-icon tell">💬</div><div class="p-action-copy"><b>拍午餐</b><span><i class="p-mini-goal slim">减肥</i>tell · 11:45</span></div><div class="p-reward">☀☀</div></div>
+                  <div class="p-action-cell"><div class="p-type-icon quiz">✦</div><div class="p-action-copy"><b>三词挑战</b><span><i class="p-mini-goal english">英语</i>quiz · 15:00</span></div><div class="p-reward">☀☀</div></div>
+                  <div class="p-action-cell"><div class="p-type-icon read">📖</div><div class="p-action-copy"><b>读今日 AI 信号</b><span><i class="p-mini-goal ai">AI</i>read · 21:00</span></div><div class="p-reward">☀☀</div></div>
+                </div>
+                <div class="daily-plan-phone-note">Daily Plan 是当天视图；具体为什么排这些 Action Card，来自每个 Desire 的 Desire Plan。</div>
+              </div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="plan-section-kicker">Desire Plan 的 9 个要素</div>
+        <div class="plan-groups">
+          <section class="plan-group macro">
+            <div class="plan-group-label">Macro Plan · 1-5</div>
+            <h3>宏观 plan：先判断这份计划为什么成立</h3>
+            <p>宏观 plan 负责把一个愿望变成一套成立的长期策略。它先回答“这个 Desire 到底是什么、为什么现在还没做到”，再说明“为什么这套方法值得执行，以及用什么节奏推进”。</p>
+            <ul class="plan-bullets">
+              <li><b>1. 用户 Desire 定义：</b>用户真正想靠近的生活状态，不只是任务名或指标；需要保留愿望感、动机、边界和不想牺牲的东西。<span class="plan-example">例：减肥不是“少吃”，而是“更轻盈、有掌控感”；追 crush 不是“拿下对方”，而是“自然推进关系”。</span></li>
+              <li><b>2. 用户当前状态和关键问题：</b>解释为什么用户现在还没做到，包括当前行为、数据、阻力、过去失败原因，以及 Agent 的诊断假设。<span class="plan-example">例：睡好觉的问题可能是睡前手机和作息漂移；AI 新闻跟进的问题是信息源太散、看了没有沉淀。</span></li>
+              <li><b>3. 解决问题的方法：</b>把理论、经验方法或产品策略写成“为什么这样做会有效”的因果链。<span class="plan-example">例：减肥用“拍餐可见性 → 晚餐微调 → 稳定缺口”；英语单词用“小剂量输入 → 主动回忆 → 间隔复习”。</span></li>
+              <li><b>4. 达成 Desire 的定义：</b>同时看结果、过程、主观感受和安全边界，判断用户是否真的在变好。<span class="plan-example">例：护肤看泛红、干燥、爆痘和照片趋势；睡好觉看入睡时间、睡眠评分和睡前刷屏下降。</span></li>
+              <li><b>5. 时间与周期策略：</b>明确总周期、阶段拆分、每阶段重点，以及进入下一阶段的条件。<span class="plan-example">例：减肥可按 12 周分记录、控量、平台期、巩固；旅游按 T-30 / T-14 / T-7 / T-1 倒排。</span></li>
+            </ul>
+          </section>
+
+          <section class="plan-group micro">
+            <div class="plan-group-label">Micro Plan · 6-9</div>
+            <h3>微观 plan：再决定每天怎么落地和怎么调</h3>
+            <p>微观 plan 负责把长期策略变成今天能发生的动作。它规定 Action Card 怎么生成、Tips 什么时候出现、Progress 记录什么，以及 Review 如何把做不到和走偏重新带回计划。</p>
+            <ul class="plan-bullets">
+              <li><b>6. Action Protocol：</b>定义行动类型、频率、触发时机、完成标准、最小版本和标准版本，直接生成 Action Card。<span class="plan-example">例：减肥的最小动作是拍一餐；AI 新闻跟进是读 5 条并标记 1 条最有用。</span></li>
+              <li><b>7. Tips Protocol：</b>定义 Agent 在什么时机给什么辅助资源；Tips 只服务 Action Card，不强制完成，也不抢走行动主线。<span class="plan-example">例：午餐前给健康餐厅；旅游在订酒店前给预算表、地图和备选区域。</span></li>
+              <li><b>8. Progress Protocol：</b>定义记录哪些进展、用什么 dashboard 或数据看趋势、哪些信号要回流给 Agent。<span class="plan-example">例：英语看 quiz 正确率和遗忘词；Art Daily 看收藏作品、感受记录和偏好变化。</span></li>
+              <li><b>9. Review Protocol：</b>定义什么时候复盘、复盘看什么、如何调计划；做不到、走偏、平台期、生活变化都在这里处理。<span class="plan-example">例：减肥平台期要调热量或行动难度；追 crush 负面信号增加时自动降频。</span></li>
+            </ul>
+          </section>
+        </div>
+
+        <div class="plan-section-kicker" style="margin-top: 26px;">4 个 Desire Plan 示例</div>
+        <div class="plan-md-grid">
+          <details class="plan-md-card">
+            <summary><span>减肥</span><small>展开 Desire Plan</small></summary>
+            <div class="plan-md-content">
+              <p>这个 Desire 不是“每天少吃”，而是“3 个月内更轻盈、有掌控感，不再靠焦虑节食”。Plan 先把外食和晚间补偿这两个关键阻力拆开，再把每天的拍餐和晚餐微调变成低摩擦 Action Card。</p>
+              <ul class="plan-bullets compact">
+                <li><b>宏观：</b>饮食可见性 → 轻热量缺口 → 高蛋白饱腹；12 周拆成记录、控量、平台期和巩固。</li>
+                <li><b>达成：</b>看体重趋势、拍餐率、蛋白达标和饥饿感，不只看某一天体重。</li>
+                <li><b>微观：</b>最小 Action Card 是拍一餐，标准版本是拍餐后看晚餐微调建议，每周穿插 1-2 个 quiz。</li>
+                <li><b>Tips / Progress / Review：</b>给健康餐厅、热量估算和平台期建议；每周按热量、蛋白、体重和完成率调难度。</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="plan-md-card">
+            <summary><span>睡好觉</span><small>展开 Desire Plan</small></summary>
+            <div class="plan-md-content">
+              <p>这个 Desire 是“晚上能收下来，睡得更稳”，不是一句“早点睡”。Plan 的重点是找到昼夜节律的锚点，让用户不用靠意志力硬撑到固定时间。</p>
+              <ul class="plan-bullets compact">
+                <li><b>宏观：</b>围绕晨间光照、睡前降刺激、手机离床推进；4 周完成观察、routine、环境优化和巩固。</li>
+                <li><b>达成：</b>看入睡时间、睡眠时长、睡眠评分和睡前刷屏下降。</li>
+                <li><b>微观：</b>上午晒太阳、22:30 调暗灯光、睡前手机离床和 5 分钟呼吸，按时段进入 Daily Plan。</li>
+                <li><b>Tips / Progress / Review：</b>给睡眠报告、NSDR 音频和睡前 checklist；连续失败时只保留“手机离床”一个核心动作。</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="plan-md-card">
+            <summary><span>AI 新闻跟进</span><small>展开 Desire Plan</small></summary>
+            <div class="plan-md-content">
+              <p>这个 Desire 是“跟上 AI 变化，但不被信息流淹没”。Plan 不要求用户追全网，而是让 Agent 代筛信号，并把信息沉淀成和工作有关的判断。</p>
+              <ul class="plan-bullets compact">
+                <li><b>宏观：</b>按工作相关性分层，只保留会影响工作流的信号；节奏是每日 5 条、每周一次趋势 recap。</li>
+                <li><b>达成：</b>看阅读完成率、有用标记、收藏率和用户反馈的相关度。</li>
+                <li><b>微观：</b>读完 5 条，标记 1 条最有用，写一句“这对我有什么影响”。</li>
+                <li><b>Tips / Progress / Review：</b>给工具资料、趋势解释和背景链接；根据标记主题和低相关来源调整下一周信息源。</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="plan-md-card">
+            <summary><span>追crush</span><small>展开 Desire Plan</small></summary>
+            <div class="plan-md-content">
+              <p>这个 Desire 是“自然推进关系，不被焦虑牵着走”。Plan 不是强推每日任务，而是围绕真实互动事件读信号、控节奏、降低过度解读。</p>
+              <ul class="plan-bullets compact">
+                <li><b>宏观：</b>先读信号再推进，降低追问频率，提高互动质量；周期按互动事件推进，不强行每天打卡。</li>
+                <li><b>达成：</b>看对方主动性、回复质量、话题延展和邀约反馈。</li>
+                <li><b>微观：</b>从 tell 开始，上传聊天截图或描述事件，Agent 判断节奏，再给下一句或轻邀约建议。</li>
+                <li><b>Tips / Progress / Review：</b>给关系动态分析、开场白和轻邀约地点；负面信号增加时自动降频，保护情绪和关系节奏。</li>
+              </ul>
+            </div>
+          </details>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== Action Cards (6 types) ===== -->
+    <div class="unit-section">
+      <div class="unit-section-head">
+        <div class="unit-num purple">3</div>
+        <div class="unit-text">
+          <h2>Action Card <span style="font-size: 16px; color: var(--muted); font-weight: 700; margin-left: 8px;">· 6 类</span></h2>
+          <p style="margin-top: 6px;">Action Card 是 Agent 和用户约定好的、用户要做的事情。完成后会获得动效、积分和连胜等奖励。共 6 种类型，每种有不同的完成判定：read（读完）、todo（勾选完）、vibe coding（完成交互 / 答题）、tell（上传完）、do（一键完成）、recap（看完复盘 + 调方向）。</p>
         </div>
       </div>
 
@@ -2846,7 +2991,7 @@
 
               <!-- per goal breakdown -->
               <div style="margin: 0 14px;">
-                <div style="font-size: 10px; color: var(--brand-deep); font-weight: 900; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 6px;">各 Goal 完成率</div>
+                <div style="font-size: 10px; color: var(--brand-deep); font-weight: 900; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 6px;">各 Desire 完成率</div>
                 <div style="display: flex; flex-direction: column; gap: 5px;">
                   <div style="display: flex; align-items: center; gap: 6px;">
                     <span style="width: 14px; height: 14px; border-radius: 50%; background: linear-gradient(135deg, #c8e6bd, #45a312); flex: 0 0 auto;"></span>
@@ -2883,21 +3028,21 @@
       </div>
     </div>
 
-    <!-- ===== Resources ===== -->
+    <!-- ===== Tips ===== -->
     <div class="unit-section">
       <div class="unit-section-head">
-        <div class="unit-num green">3</div>
+        <div class="unit-num green">4</div>
         <div class="unit-text">
-          <h2>Resources</h2>
+          <h2>Tips</h2>
         </div>
       </div>
 
       <div class="unit-body">
         <div class="unit-info">
-          <p>Resource 是 Agent 给用户的<b>辅助支持</b>——通过 nudge 形式呈现，用户可以选择消费但<b>不强制</b>。这是 Action 的"配套补给"，用来降低完成 action 的门槛。</p>
+          <p>Tips 是帮助用户完成 Action Card 的资源——通过 nudge、资源卡、地点推荐或数据卡呈现，用户可以选择消费但<b>不强制</b>。它只服务 Action Card，用来降低完成事情的门槛。</p>
           <ul>
-            <li><span class="li-icon" style="background: rgba(69,163,18,0.14); color: #357d10;">①</span><span><b>形式：</b>商品 / 餐厅 / 教程 / 音频 / 文章 / 数据卡 / nudge 提醒</span></li>
-            <li><span class="li-icon" style="background: rgba(69,163,18,0.14); color: #357d10;">②</span><span><b>不强求：</b>不消费不影响 streak，只是把"现成的支持"摆到面前</span></li>
+            <li><span class="li-icon" style="background: rgba(69,163,18,0.14); color: #357d10;">①</span><span><b>形式：</b>餐厅 / 教程 / 音频 / 文章 / 商品 / 数据卡 / nudge 提醒。</span></li>
+            <li><span class="li-icon" style="background: rgba(69,163,18,0.14); color: #357d10;">②</span><span><b>不强求：</b>不消费 Tips 不影响完成，只是把"现成的支持"摆到面前。</span></li>
           </ul>
         </div>
 
@@ -2948,23 +3093,23 @@
       </div>
     </div>
 
-    <!-- ===== Streak ===== -->
+    <!-- ===== Progress ===== -->
     <div class="unit-section">
       <div class="unit-section-head">
-        <div class="unit-num blue">4</div>
+        <div class="unit-num blue">5</div>
         <div class="unit-text">
-          <h2>Streak</h2>
+          <h2>Progress</h2>
         </div>
       </div>
 
       <div class="unit-body">
         <div class="unit-info">
-          <p>Streak 是用户每天的<b>奖励落地</b>。每天至少完成一次 action 即获得 streak。<b>请假也算 streak</b>——这是 Jovida 区别于多邻国式催促的关键设计。连续 streak 累积可以解锁特殊里程碑（30 / 100 / 365 天）。</p>
+          <p>Progress 是用户的进展，包含 dashboard、趋势、复盘和奖励。它让用户看见自己正在变化，也让 Agent 判断 Desire Plan 是否要调整。Streak 是 Progress 里的奖励层：每天至少完成一次 Action Card 即获得连胜。</p>
           <ul>
-            <li><span class="li-icon" style="background: rgba(79,143,200,0.14); color: #2d5e85;">①</span><span><b>触发：</b>每天完成至少 1 个 action 即 +1 streak。完成多个不会叠加，只算 1。</span></li>
-            <li><span class="li-icon" style="background: rgba(79,143,200,0.14); color: #2d5e85;">②</span><span><b>挽回：</b>断胜当天完成 3 个 action 可补回连胜（C1 路径）</span></li>
-            <li><span class="li-icon" style="background: rgba(79,143,200,0.14); color: #2d5e85;">③</span><span><b>请假：</b>用户主动请假 / 系统检测特殊状态时，休息日也算 streak（C3 路径）</span></li>
-            <li><span class="li-icon" style="background: rgba(79,143,200,0.14); color: #2d5e85;">④</span><span><b>里程碑：</b>30 / 100 / 365 天解锁限定徽章 + 全屏特殊动效，是产品的对外传播契机</span></li>
+            <li><span class="li-icon" style="background: rgba(79,143,200,0.14); color: #2d5e85;">①</span><span><b>Dashboard：</b>按 Desire 展示关键进展，比如睡眠时长、热量、完成率、正确率。</span></li>
+            <li><span class="li-icon" style="background: rgba(79,143,200,0.14); color: #2d5e85;">②</span><span><b>Review：</b>Progress 回流到复盘，决定下一段 Desire Plan 怎么改。</span></li>
+            <li><span class="li-icon" style="background: rgba(79,143,200,0.14); color: #2d5e85;">③</span><span><b>奖励：</b>完成 Action Card 后给动效、积分和 streak；请假也可以计入连胜。</span></li>
+            <li><span class="li-icon" style="background: rgba(79,143,200,0.14); color: #2d5e85;">④</span><span><b>里程碑：</b>30 / 100 / 365 天解锁限定徽章 + 全屏特殊动效，是产品的对外传播契机。</span></li>
           </ul>
         </div>
 
@@ -3070,23 +3215,23 @@
         <span class="star">⭐</span>有效行为
         <span class="op">=</span> 用户尝试
         <span class="op">+</span> 用户完成
-        <span class="op">+</span> 用户消费资源
+        <span class="op">+</span> 用户消费 Tips
       </div>
       <div class="definitions">
         <div class="ns-def-card">
           <div class="def-num">① 尝试</div>
-          <h4>用户尝试完成 action</h4>
-          <p>点开 action 详情页 / 开始一个 quiz / 上传一张图。代表"被推到了 + 愿意试"。</p>
+          <h4>用户尝试完成 Action Card</h4>
+          <p>点开 Action Card 详情页 / 开始一个 quiz / 上传一张图。代表"被推到了 + 愿意试"。</p>
         </div>
         <div class="ns-def-card">
           <div class="def-num">② 完成</div>
-          <h4>用户完成 action</h4>
+          <h4>用户完成 Action Card</h4>
           <p>读完 read / 勾掉 todo / 答完 quiz / 提交 tell。代表实际产生价值。</p>
         </div>
         <div class="ns-def-card">
           <div class="def-num">③ 消费</div>
-          <h4>用户消费资源 resources</h4>
-          <p>看了一份资源、点了一家餐厅、用了一段教程。代表 Agent 给的支持被真的用上了。</p>
+          <h4>用户消费 Tips</h4>
+          <p>看了一份 Tips、点了一家餐厅、用了一段教程。代表 Agent 给的支持被真的用上了。</p>
         </div>
       </div>
     </div>
@@ -3120,8 +3265,8 @@
     <div class="driver-card purple">
       <div class="dr-num">2</div>
       <span class="dr-effect">→ 让用户体验好</span>
-      <h3>Onboarding / 规划 / Action 推得好</h3>
-      <p>用户来了，但 action 没意思 / 看不懂 / 难完成 → 立刻流失。这个驱动力 = 让 action 好做、好懂、好选。</p>
+      <h3>Onboarding / 规划 / Action Card 推得好</h3>
+      <p>用户来了，但 Action Card 没意思 / 看不懂 / 难完成 → 立刻流失。这个驱动力 = 让 Action Card 好做、好懂、好选。</p>
       <button class="cross-link" onclick="switchTab('coach')">详见 教练视角闭环 →</button>
     </div>
 
@@ -3186,7 +3331,7 @@
         <div class="channel-item">
           <div class="ch-row"><span class="ch-name">Live Activity</span><span class="ch-pri p0">P0</span></div>
           <div class="ch-tag-row"><span class="ch-tag persistent">持续型</span></div>
-          <p class="ch-desc">节点进行中的状态条。倒计时 / 进度 / 当前 action。</p>
+          <p class="ch-desc">节点进行中的状态条。倒计时 / 进度 / 当前 Action Card。</p>
         </div>
         <div class="channel-item">
           <div class="ch-row"><span class="ch-name">灵动岛</span><span class="ch-pri p0">P0</span></div>
@@ -3579,7 +3724,7 @@
   <div class="section-head">
     <span class="pill-tag green">🗺️ 用户旅程与情绪地图</span>
     <h1>从第一次打开到第 N 个早晨</h1>
-    <p>把用户和 Jovida 之间发生的所有关键时刻串成一张地图——主线是日常 (Onboarding → 看到今日 actions → 完成 → 多日里程碑 → 复盘)，<b>从"看到 actions"开始有 4 条分支</b>（正常完成 / 没完成 / 想改 / 请假），所有分支都会汇回到第二天的入口。复盘后调出的新策略再注入回主线 —— 整张图是一个嵌套了多个小循环的大循环。</p>
+    <p>把用户和 Jovida 之间发生的所有关键时刻串成一张地图——主线是日常 (Onboarding → 看到 Daily Plan → 完成 Action Card → 多日里程碑 → 复盘)，<b>从"看到 Daily Plan"开始有 4 条分支</b>（正常完成 / 没完成 / 想改 / 请假），所有分支都会汇回到第二天的入口。复盘后调出的新策略再注入回主线 —— 整张图是一个嵌套了多个小循环的大循环。</p>
   </div>
 
   <div class="journey-map">
@@ -3610,7 +3755,7 @@
                 </div>
                 <div style="padding: 28px 16px 0; text-align: center;">
                   <h2 style="margin: 0; font-size: 22px; font-weight: 900; color: #221f1c; line-height: 1.2;">Enter anything you want</h2>
-                  <p style="margin: 8px 0 0; font-size: 11.5px; color: #5d544c; line-height: 1.5;">You can create a goal through an image,<br>a link, or a simple description.</p>
+                  <p style="margin: 8px 0 0; font-size: 11.5px; color: #5d544c; line-height: 1.5;">You can create a desire through an image,<br>a link, or a simple description.</p>
                 </div>
                 <div style="margin: 22px 0 0; overflow: hidden;">
                   <div style="display: flex; gap: 6px; padding: 0 10px; margin-bottom: 7px; transform: translateX(-12px);">
@@ -3624,7 +3769,7 @@
                   </div>
                 </div>
                 <div style="margin: 70px 16px 0; background: rgba(255,255,255,0.78); border-radius: 18px; padding: 14px;">
-                  <div style="font-size: 11px; color: #aaa;"><span style="display: inline-block; width: 1.5px; height: 12px; background: #45a312; vertical-align: middle; margin-right: 2px;"></span>Tell me your goal...</div>
+                  <div style="font-size: 11px; color: #aaa;"><span style="display: inline-block; width: 1.5px; height: 12px; background: #45a312; vertical-align: middle; margin-right: 2px;"></span>Tell me your desire...</div>
                   <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 24px;">
                     <div style="width: 26px; height: 26px; border-radius: 50%; background: rgba(255,255,255,0.7); display: grid; place-items: center; font-size: 12px;">🖼️</div>
                     <div style="width: 26px; height: 26px; border-radius: 50%; background: rgba(255,255,255,0.7); display: grid; place-items: center; font-size: 12px;">🎤</div>
@@ -3724,15 +3869,15 @@
       <div class="pl">完成 Onboarding · 进入日常 → 每天打开 App</div>
     </div>
 
-    <!-- ===== B0 看到今日 action list ===== -->
+    <!-- ===== B0 看到 Daily Plan ===== -->
     <div class="jm-row r1">
       <div class="stage-card">
         <div class="stage-card-head">
           <span class="stage-code">B0</span>
         </div>
-        <h3>看到今日 action list</h3>
+        <h3>看到 Daily Plan</h3>
         <span class="emotion-badge high">🌅 期待 + 选择</span>
-        <p class="stage-desc">每天打开 App 的<b>入口</b>。Agent 已经按当前策略 + 用户状态排好了今日 action list（4-6 张牌，跨心愿混排，按时间排序）。用户在这里"决定下一步走哪条路径"——直接做、调整、跳过、还是请假。</p>
+        <p class="stage-desc">每天打开 App 的<b>入口</b>。Agent 已经按当前策略 + 用户状态排好了今日 Daily Plan（4-6 张 Action Card，跨心愿混排，按时间排序）。用户在这里"决定下一步走哪条路径"——直接做、调整、跳过、还是请假。</p>
 
         <div class="stage-phone-wrap">
           <div class="phone"><div class="phone-screen">
@@ -3759,7 +3904,7 @@
             </div>
 
             <div class="p-section-head">
-              <h3>今日 Actions</h3>
+              <h3>今日 Action Cards</h3>
               <span class="side">0/4 完成</span>
             </div>
 
@@ -3797,7 +3942,7 @@
         <polygon points="1062,124 1050,108 1074,108" fill="#7866d8"/>
         <polygon points="1487,124 1475,108 1499,108" fill="#7866d8"/>
       </svg>
-      <span class="jm-fork-pill normal">正常 · 完成 action</span>
+      <span class="jm-fork-pill normal">正常 · 完成 Action Card</span>
       <span class="jm-fork-pill miss">异常 · 没完成</span>
       <span class="jm-fork-pill modify">异常 · 想改</span>
       <span class="jm-fork-pill leave">异常 · 请假</span>
@@ -3811,9 +3956,9 @@
         <div class="stage-card-head">
           <span class="stage-code">B1</span>
         </div>
-        <h3>完成 action · 即时奖励</h3>
+        <h3>完成 Action Card · 即时奖励</h3>
         <span class="emotion-badge high">😄 小成就感</span>
-        <p class="stage-desc">每完成一个 action：<b>撒花动效 + ☀ 积分 + 连胜 +1</b>，外加 Agent 给一句关联反馈。日常情绪的主要供给。</p>
+        <p class="stage-desc">每完成一个 Action Card：<b>撒花动效 + ☀ 积分 + 连胜 +1</b>，外加 Agent 给一句关联反馈。日常情绪的主要供给。</p>
 
         <div class="stage-phone-wrap">
           <div class="phone"><div class="phone-screen">
@@ -3843,7 +3988,7 @@
         </div>
         <h3>没完成 · 冻结自动消耗 + 挽回任务</h3>
         <span class="emotion-badge low">😞 失落 → 重燃</span>
-        <p class="stage-desc">用户没在窗口期完成。<b>系统自动消耗 1 次连胜冻结额度（每 streak 周期最多 3 次）</b>，连胜不真断；同时 Agent 给一个<b>挽回任务</b>：今天完成 3 个 action 即可补回完美状态。把"失败"翻译成"机会"。</p>
+        <p class="stage-desc">用户没在窗口期完成。<b>系统自动消耗 1 次连胜冻结额度（每 streak 周期最多 3 次）</b>，连胜不真断；同时 Agent 给一个<b>挽回任务</b>：今天完成 3 张 Action Card 即可补回完美状态。把"失败"翻译成"机会"。</p>
 
         <div class="stage-phone-wrap">
           <div class="phone"><div class="phone-screen" style="background: linear-gradient(180deg, #2a2520 0%, #f4f0ea 50%);">
@@ -3856,7 +4001,7 @@
             </div>
             <div style="margin: 20px 14px 0; background: linear-gradient(135deg, #fff8e6, #ffd996); border: 1.5px solid var(--brand); border-radius: 18px; padding: 14px;">
               <div style="font-size: 10.5px; color: var(--brand-deep); font-weight: 900; letter-spacing: 1px; text-transform: uppercase;">⚡ 挽回任务</div>
-              <div style="font-size: 15px; font-weight: 900; color: #2f220f; margin-top: 6px;">完成 3 个 action<br>补回连胜</div>
+              <div style="font-size: 15px; font-weight: 900; color: #2f220f; margin-top: 6px;">完成 3 张 Action Card<br>补回连胜</div>
               <div style="display: flex; gap: 5px; margin-top: 12px;">
                 <div style="flex: 1; height: 6px; border-radius: 999px; background: rgba(120,80,30,0.18);"></div>
                 <div style="flex: 1; height: 6px; border-radius: 999px; background: rgba(120,80,30,0.18);"></div>
@@ -3885,7 +4030,7 @@
         </div>
         <h3>想改 · 在卡片上左滑</h3>
         <span class="emotion-badge recovery">🛠️ 受控 + 快速</span>
-        <p class="stage-desc">能力不足 / 时间冲突 / 觉得不合适——直接在 home 上左滑 action 卡，调出 <b>编辑 / 延后 / 跳过</b> 按钮。<b>不打开对话</b>就能微调，调整成本要低于完成成本。</p>
+        <p class="stage-desc">能力不足 / 时间冲突 / 觉得不合适——直接在 home 上左滑 Action Card，调出 <b>编辑 / 延后 / 跳过</b> 按钮。<b>不打开对话</b>就能微调，调整成本要低于完成成本。</p>
 
         <div class="stage-phone-wrap">
           <div class="phone"><div class="phone-screen">
@@ -3904,7 +4049,7 @@
                 <img src="ip.png" alt="">
               </div>
             </div>
-            <div class="p-section-head"><h3>今日 Actions</h3><span class="side">← 左滑修改</span></div>
+            <div class="p-section-head"><h3>今日 Action Cards</h3><span class="side">← 左滑修改</span></div>
             <div class="p-action-list">
               <div class="p-action-cell"><div class="p-type-icon read">📖</div><div class="p-action-copy"><b>读今日 AI 信号</b><span><i class="p-mini-goal ai">AI</i>read · 5 min</span></div><div class="p-reward">☀☀</div></div>
               <div class="swipe-row">
@@ -3934,7 +4079,7 @@
         </div>
         <h3>请假 · 左滑或对话告诉 Agent</h3>
         <span class="emotion-badge recovery">🫶 被理解 + 不羞辱</span>
-        <p class="stage-desc">突发情况——生病、出差、月经期。<b>支持两种方式</b>：① 在 home 上左滑一整天的 actions 标记"请假"；② 直接和 Agent 对话告诉。<b>Agent 直接给"休息日也算连胜"</b>，不打断节奏。这条路径是产品对用户最大的尊重。</p>
+        <p class="stage-desc">突发情况——生病、出差、月经期。<b>支持两种方式</b>：① 在 home 上左滑一整天的 Action Cards 标记"请假"；② 直接和 Agent 对话告诉。<b>Agent 直接给"休息日也算连胜"</b>，不打断节奏。这条路径是产品对用户最大的尊重。</p>
 
         <div class="stage-phone-wrap">
           <div class="phone"><div class="phone-screen">
@@ -3955,7 +4100,7 @@
                   <img src="ip.png" alt="" style="width: 24px; height: 24px; border-radius: 50%; flex: 0 0 auto; opacity: 0;">
                   <div style="flex: 1; background: linear-gradient(135deg, #f4ecff, #e3d9ff); border: 1px solid rgba(120,102,216,0.4); padding: 11px; border-radius: 14px;">
                     <div style="font-size: 10px; color: #5b4eab; font-weight: 900; letter-spacing: 1px; text-transform: uppercase;">今日 · 静养 ☘️</div>
-                    <div style="font-size: 12px; font-weight: 900; color: #221f1c; margin-top: 4px;">所有 action 已暂停</div>
+                    <div style="font-size: 12px; font-weight: 900; color: #221f1c; margin-top: 4px;">所有 Action Card 已暂停</div>
                     <div style="display: inline-flex; align-items: center; gap: 4px; background: rgba(255,122,69,0.18); color: #c55215; padding: 3px 9px; border-radius: 999px; font-size: 10.5px; font-weight: 900; margin-top: 7px;">🔥 12 仍在</div>
                   </div>
                 </div>
@@ -3977,7 +4122,7 @@
     <div class="jm-merge-loop">
       <div class="ml-icon">↺</div>
       <div>
-        <b>4 条分支都汇回明天的 B0</b>——无论是完成、补回连胜、调整任务、还是直接连胜，明天都从"看到今日 actions"重新开始。这是<b>每天的循环</b>。
+        <b>4 条分支都汇回明天的 B0</b>——无论是完成、补回连胜、调整任务、还是直接连胜，明天都从"看到 Daily Plan"重新开始。这是<b>每天的循环</b>。
       </div>
     </div>
 
@@ -4195,7 +4340,7 @@
     <div class="jm-final-loop">
       <div class="fl-icon">↺</div>
       <div class="fl-text">
-        <b>复盘后的新策略 → 注入回 B0</b>——D2 给出的下一段策略会更新进 B0 的 action list，让下一段陪练带着新方向继续上场。这是教练宏观闭环的迭代点，<b>整张地图就此完成大循环</b>。
+        <b>复盘后的新策略 → 注入回 B0</b>——D2 给出的下一段策略会更新进 B0 的 Daily Plan，让下一段陪练带着新方向继续上场。这是教练宏观闭环的迭代点，<b>整张地图就此完成大循环</b>。
       </div>
     </div>
 
@@ -5087,6 +5232,231 @@
 }
 .unit-phone-frame:hover .phone { transform: scale(0.62); }
 
+/* Plan module */
+.plan-split {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+  gap: 16px;
+  margin-bottom: 18px;
+}
+.plan-principle {
+  background: var(--canvas-2);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 18px 18px 20px;
+}
+.plan-principle.primary {
+  background: linear-gradient(135deg, #fff8e9 0%, #f4ecff 100%);
+  border-color: rgba(120,102,216,0.24);
+}
+.plan-principle .plan-kicker,
+.plan-section-kicker {
+  font-size: 10.5px;
+  color: var(--brand-deep);
+  font-weight: 900;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+.plan-principle h3 {
+  margin: 7px 0 8px;
+  font-size: 20px;
+  line-height: 1.25;
+  color: #221f1c;
+}
+.plan-principle p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.65;
+  color: #5d544c;
+}
+.plan-flow {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 14px;
+}
+.plan-flow span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 26px;
+  border-radius: 999px;
+  padding: 0 10px;
+  background: #fff;
+  border: 1px solid rgba(255,122,69,0.22);
+  color: #221f1c;
+  font-size: 11px;
+  font-weight: 900;
+}
+.plan-flow i {
+  color: var(--brand-deep);
+  font-style: normal;
+  font-size: 13px;
+  font-weight: 900;
+}
+.plan-groups {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 16px;
+  margin-top: 12px;
+}
+.plan-group {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 18px 18px 20px;
+}
+.plan-group.macro {
+  border-top: 4px solid rgba(255,122,69,0.55);
+}
+.plan-group.micro {
+  border-top: 4px solid rgba(120,102,216,0.48);
+}
+.plan-group-label {
+  color: var(--brand-deep);
+  font-size: 10.5px;
+  font-weight: 900;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+.plan-group h3 {
+  margin: 8px 0 12px;
+  font-size: 18px;
+  color: #221f1c;
+  line-height: 1.32;
+}
+.plan-group p {
+  margin: 0 0 10px;
+  font-size: 12.5px;
+  color: #6d655e;
+  line-height: 1.75;
+}
+.plan-group p:last-child { margin-bottom: 0; }
+.plan-group p b {
+  color: #221f1c;
+  font-weight: 900;
+}
+.plan-bullets {
+  list-style: none;
+  margin: 12px 0 0;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+}
+.plan-bullets li {
+  position: relative;
+  padding-left: 15px;
+  color: #5d544c;
+  font-size: 12.2px;
+  line-height: 1.58;
+}
+.plan-bullets li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.72em;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgba(255,122,69,0.68);
+}
+.plan-group.micro .plan-bullets li::before,
+.plan-md-card:nth-child(even) .plan-bullets li::before {
+  background: rgba(120,102,216,0.62);
+}
+.plan-bullets li b {
+  color: #221f1c;
+  font-weight: 900;
+}
+.plan-example {
+  display: block;
+  margin-top: 4px;
+  color: #8a7768;
+  font-size: 11.4px;
+  line-height: 1.5;
+}
+.plan-bullets.compact {
+  gap: 7px;
+  margin-top: 10px;
+}
+.plan-md-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 12px;
+}
+.plan-md-card {
+  background: var(--canvas-2);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 0;
+  overflow: hidden;
+}
+.plan-md-card summary {
+  list-style: none;
+  cursor: pointer;
+  min-height: 58px;
+  padding: 16px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.plan-md-card summary::-webkit-details-marker { display: none; }
+.plan-md-card summary span {
+  color: #221f1c;
+  font-size: 16px;
+  font-weight: 900;
+}
+.plan-md-card summary small {
+  color: var(--brand-deep);
+  font-size: 11px;
+  font-weight: 900;
+  white-space: nowrap;
+}
+.plan-md-card summary small::after {
+  content: "＋";
+  display: inline-block;
+  margin-left: 7px;
+  font-size: 13px;
+}
+.plan-md-card[open] summary {
+  border-bottom: 1px solid rgba(170,160,148,0.42);
+  background: rgba(255,122,69,0.05);
+}
+.plan-md-card[open] summary small::after { content: "－"; }
+.plan-md-content {
+  padding: 14px 18px 18px;
+}
+.plan-md-card p {
+  margin: 0 0 10px;
+  color: #5d544c;
+  font-size: 12.3px;
+  line-height: 1.72;
+}
+.plan-md-card p:last-child { margin-bottom: 0; }
+.plan-md-card p b {
+  color: #221f1c;
+  font-weight: 900;
+}
+.daily-plan-phone-note {
+  margin: 12px 14px 0;
+  background: rgba(255,122,69,0.08);
+  border: 1px dashed rgba(255,122,69,0.35);
+  border-radius: 12px;
+  padding: 9px 10px;
+  color: #5d544c;
+  font-size: 10.5px;
+  line-height: 1.4;
+}
+@media (max-width: 1200px) {
+  .plan-split,
+  .plan-groups,
+  .plan-md-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Actions 6-types row */
 .unit-actions-row {
   display: grid;
@@ -5789,18 +6159,18 @@ const nodeMeta = {
     tag: '场景驱动 · 非定时'
   },
   mi3: {
-    title: '通过 Action 干预',
+    title: '通过 Action Card 干预',
     desc: '推一步具体动作让用户做：一道 quiz、一个 todo、一篇要读的、一段要传给我的。详情页里把支持都预挂好，用户不用再去找。完成成本极低，所以摩擦也低。',
     tag: '干预 · 通道 A'
   },
   mi3b: {
-    title: '通过 Resources / Nudges 辅助',
-    desc: '把现成的支持摆到面前——附近这家健康餐厅、这本书的某一页、今晚 22:30 调暗灯光。Resources 帮用户做事更顺，Nudges 是不强求完成的轻提醒。两者都不要求用户完成动作，只是在旁边帮一把。',
+    title: '通过 Tips 辅助',
+    desc: '把现成的支持摆到面前——附近这家健康餐厅、这本书的某一页、今晚 22:30 调暗灯光。Tips 帮用户完成 Action Card，但不强制消费，只是在旁边帮一把。',
     tag: '干预 · 通道 B'
   },
   mi4: {
     title: '用户执行行为',
-    desc: '用户实际做了 action，得到一个具体结果：quiz 70 分、todo 勾掉、读完一篇。Agent 立即给关联反馈（不是泛泛"恭喜"），同时这次结果回流成下一轮观察的素材——成为新一轮的起点。',
+    desc: '用户实际完成了 Action Card，得到一个具体结果：quiz 70 分、todo 勾掉、读完一篇。Agent 立即给关联反馈（不是泛泛"恭喜"），同时这次结果回流成下一轮观察的素材——成为新一轮的起点。',
     tag: '完成 · 拿结果 · 回流到观察'
   },
 };
